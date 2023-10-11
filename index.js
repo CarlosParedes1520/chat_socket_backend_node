@@ -28,6 +28,9 @@ app.use( express.static( publicPath ) );
 
 app.use('/api/login',require('./routes/auth'));
 
+app.use('/api/usuario',require('./routes/usuarios'));
+app.use('/api/mensajes',require('./routes/mensajes'));
+
 
 
 server.listen( process.env.PORT, ( err ) => {
